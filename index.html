@@ -33,10 +33,10 @@
 	<script>
 		const audioElement = document.getElementById('myAudio');
 
-		setTimeout(()=> {
+		window.addEventListener('click', () => {
 			audioElement.play();
 			audioElement.volumn = 0.5;
-		}, 1000)
+		})
 
 		audioElement.addEventListener('canplay', () => {
 			console.log('Audio can play');
